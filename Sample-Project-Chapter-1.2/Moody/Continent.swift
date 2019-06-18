@@ -12,6 +12,7 @@ import CoreData
 
 
 final class Continent: NSManagedObject {
+    // 对多关系, 默认是 Set 集合
     @NSManaged fileprivate(set) var countries: Set<Country>
     @NSManaged var updatedAt: Date
 
@@ -27,6 +28,8 @@ final class Continent: NSManagedObject {
 
     static func findOrCreateContinent(for isoCountry: ISO3166.Country, in context: NSManagedObjectContext) -> Continent? {
         guard let iso3166 = ISO3166.Continent(country: isoCountry) else { return nil }
+        // 使用谓词配置Fetch Request.
+        // %K => 获取 KeyPath 对应的值
         let predicate = NSPredicate(format: "%K == %d", #keyPath(numericISO3166Code), Int(iso3166.rawValue))
         let continent = findOrCreate(in: context, matching: predicate) {
             $0.iso3166Code = iso3166

@@ -12,6 +12,7 @@ import MapKit
 
 class MoodDetailViewController: UIViewController {
     @IBOutlet weak var moodView: MoodView!
+    // 可以直接在 SB 中拖拽 MKMapView
     @IBOutlet weak var mapView: MKMapView!
 
     fileprivate var observer: ManagedObjectObserver?

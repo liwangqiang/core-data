@@ -51,6 +51,7 @@ class RegionsTableViewController: UITableViewController, SegueHandler {
 
 extension RegionsTableViewController: TableViewDataSourceDelegate {
     func configure(_ cell: RegionTableViewCell, for object: Region) {
+        // 这里需要强转.
         guard let region = object as? LocalizedStringConvertible else { fatalError("Wrong object type") }
         cell.configure(for: region)
     }

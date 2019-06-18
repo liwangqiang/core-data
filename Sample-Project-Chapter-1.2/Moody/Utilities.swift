@@ -9,6 +9,7 @@
 import Foundation
 
 
+// 协议的扩展性非常强.
 extension Sequence where Iterator.Element: AnyObject {
     func containsObjectIdentical(to object: AnyObject) -> Bool {
         return contains { $0 === object }

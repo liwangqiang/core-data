@@ -13,7 +13,8 @@ enum MoodSource {
     case continent(Continent)
 }
 
-
+// Helper 方法. 包装 Region.
+// 原因是 Region 和 Country / Continent 没有关系. 这些方法若定义在 Region 上也没有办法用一个 Country 初始化 Region
 extension MoodSource {
     init(region: NSManagedObject) {
         if let country = region as? Country {
@@ -30,6 +31,7 @@ extension MoodSource {
         case .country(let c):
             return NSPredicate(format: "country = %@", argumentArray: [c])
         case .continent(let c):
+            // 谓词的使用: in 关键字
             return NSPredicate(format: "country in %@", argumentArray: [c.countries])
         }
     }

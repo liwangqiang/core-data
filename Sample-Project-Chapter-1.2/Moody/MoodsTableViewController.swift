@@ -52,6 +52,7 @@ class MoodsTableViewController: UITableViewController, SegueHandler {
         tableView.estimatedRowHeight = 100
         let request = Mood.sortedFetchRequest(with: moodSource.predicate)
         request.fetchBatchSize = 20
+        // 默认 AsFaults 是 true. 如果知道要用到返回结果的属性, 设置成 false, 避免未来的不必要开销
         request.returnsObjectsAsFaults = false
         let frc = NSFetchedResultsController(fetchRequest: request, managedObjectContext: managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
         dataSource = TableViewDataSource(tableView: tableView, cellIdentifier: "MoodCell", fetchedResultsController: frc, delegate: self)

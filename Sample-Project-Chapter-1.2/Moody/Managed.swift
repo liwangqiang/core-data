@@ -15,6 +15,7 @@ protocol Managed: class, NSFetchRequestResult {
 }
 
 
+// 默认实现, 及扩展方法
 extension Managed {
     static  var defaultSortDescriptors: [NSSortDescriptor] { return [] }
 
@@ -31,7 +32,8 @@ extension Managed {
     }
 }
 
-
+// 经典的协议扩展. 既解决代码复用问题, 又不必为遵循协议的其他类型引入不必要的方法
+// 同时这些方法很实用
 extension Managed where Self: NSManagedObject {
     static var entityName: String { return entity().name!  }
 

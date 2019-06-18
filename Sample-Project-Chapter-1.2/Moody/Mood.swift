@@ -14,6 +14,7 @@ import CoreData
 final class Mood: NSManagedObject {
     @NSManaged fileprivate(set) var date: Date
     @NSManaged fileprivate(set) var colors: [UIColor]
+    // 对一关系, 直接声明
     @NSManaged public fileprivate(set) var country: Country
 
     public var location: CLLocation? {
@@ -36,7 +37,9 @@ final class Mood: NSManagedObject {
     }
 
     override public func prepareForDeletion() {
+        ///  以关系的删除规则是无法实现这个功能的.
         if country.moods.filter({ !$0.isDeleted }).isEmpty {
+            /// 通过 EntityDescription 插入, 删除可以直接删.
             managedObjectContext?.delete(country)
         }
     }
@@ -48,7 +51,7 @@ final class Mood: NSManagedObject {
     @NSManaged fileprivate var longitude: NSNumber?
 }
 
-
+// 遵循协议, 就可以使用协议的一些扩展方法
 extension Mood: Managed {
     static var defaultSortDescriptors: [NSSortDescriptor] {
         return [NSSortDescriptor(key: #keyPath(date), ascending: false)]

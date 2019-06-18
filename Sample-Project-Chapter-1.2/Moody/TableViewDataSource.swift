@@ -40,9 +40,11 @@ class TableViewDataSource<Delegate: TableViewDataSourceDelegate>: NSObject, UITa
     }
 
     func objectAtIndexPath(_ indexPath: IndexPath) -> Object {
+        // Fetch Results Controller API 设计的对 TableView Datasource 很友好. 也使用 IndexPath, Section 等
         return fetchedResultsController.object(at: indexPath)
     }
 
+    // ???
     func reconfigureFetchRequest(_ configure: (NSFetchRequest<Object>) -> ()) {
         NSFetchedResultsController<NSFetchRequestResult>.deleteCache(withName: fetchedResultsController.cacheName)
         configure(fetchedResultsController.fetchRequest)
