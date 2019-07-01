@@ -50,7 +50,7 @@ extension Country {
 }
 
 
-private let UserIDKey = "io.objc.Moody.CloudKitUserID"
+private let UserIDKey = "tech.bruceli.Moody.CloudKitUserID"
 
 extension NSManagedObjectContext {
     public var userID: RemoteRecordID? {

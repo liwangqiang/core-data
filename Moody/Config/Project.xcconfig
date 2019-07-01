@@ -31,7 +31,7 @@ IPHONEOS_DEPLOYMENT_TARGET = 10.2
 
 // Packaging
 //
-PRODUCT_BUNDLE_IDENTIFIER = io.objc.CoreData$(PRODUCT_NAME:rfc1034identifier)
+PRODUCT_BUNDLE_IDENTIFIER = tech.bruceli.CoreData$(PRODUCT_NAME:rfc1034identifier)
 PRODUCT_NAME = $(TARGET_NAME)
 
 

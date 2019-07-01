@@ -1272,7 +1272,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = Q59R2VW9LD;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.objc.CoreDataMoodyModel-1";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.bruceli.CoreDataMoody;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -1283,7 +1283,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = Q59R2VW9LD;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.objc.CoreDataMoodyModel-1";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.bruceli.CoreDataMoody;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
