@@ -906,7 +906,7 @@
 				TargetAttributes = {
 					174495471AFB62A0007C9A75 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 58PSC9526Y;
+						DevelopmentTeam = Q59R2VW9LD;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -930,7 +930,7 @@
 					};
 					3E7CD9751B11E1050008FE1F = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = 58PSC9526Y;
+						DevelopmentTeam = Q59R2VW9LD;
 						LastSwiftMigration = 0900;
 					};
 					3E7CD97F1B11E1060008FE1F = {
@@ -941,7 +941,7 @@
 					};
 					3E7CD9A61B11E1A20008FE1F = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = 58PSC9526Y;
+						DevelopmentTeam = Q59R2VW9LD;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -951,6 +951,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				Base,
 				de,
 				en,
@@ -1269,9 +1270,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E931C561B9C245A00A1BA4C /* App-Target.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 58PSC9526Y;
+				DEVELOPMENT_TEAM = Q59R2VW9LD;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.objc.CoreDataMoody;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.objc.CoreDataMoodyModel-1";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -1280,9 +1281,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E931C561B9C245A00A1BA4C /* App-Target.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 58PSC9526Y;
+				DEVELOPMENT_TEAM = Q59R2VW9LD;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.objc.CoreDataMoody;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.objc.CoreDataMoodyModel-1";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -1397,7 +1398,7 @@
 			baseConfigurationReference = 3E931C551B9C244900A1BA4C /* Framework-Target.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 58PSC9526Y;
+				DEVELOPMENT_TEAM = Q59R2VW9LD;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -1407,7 +1408,7 @@
 			baseConfigurationReference = 3E931C551B9C244900A1BA4C /* Framework-Target.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 58PSC9526Y;
+				DEVELOPMENT_TEAM = Q59R2VW9LD;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -1437,7 +1438,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 58PSC9526Y;
+				DEVELOPMENT_TEAM = Q59R2VW9LD;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1453,7 +1454,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 58PSC9526Y;
+				DEVELOPMENT_TEAM = Q59R2VW9LD;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
